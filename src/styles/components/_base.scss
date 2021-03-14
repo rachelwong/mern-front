@@ -27,16 +27,3 @@ html {
   white-space: nowrap;
 }
 
-.body {
-  display:flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden;
-  position:relative;
-}
-
-.layout {
-  flex: 1 1 auto;
-  position: relative;
-  z-index: 0;
-}

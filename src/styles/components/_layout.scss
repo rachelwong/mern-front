@@ -1,0 +1,68 @@
+h1, h2, h3, h4, h5, h6, blockquote {
+  font-family:$heading-sans;
+}
+
+p, span, strong, small {
+  font-family: $body-sans;
+  font-size: 1.7rem;
+  line-height: 1.8;
+}
+
+.body {
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position:relative;
+}
+
+.layout {
+  flex: 1 1 auto;
+  position: relative;
+  z-index: 0;
+}
+
+.e-wrapper {
+  padding: 3rem 0;
+}
+
+.e-dark-green {
+  background-color: $dark-green;
+  color: white;
+}
+
+.e-lite-green {
+  background-color: $lite-green;
+  color: $dark-green;
+}
+
+.e-white {
+  background-color: white;
+  color: $dark-green;
+}
+
+.e-wrapper__heading {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0 3rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  & :is(h1, h2, h3, h4, h5, h6) {
+    text-align: center;
+    color: $dark-green;
+    font-size: 3rem;
+    font-family: $heading-sans;
+    margin-bottom: 2rem;
+  }
+
+  hr {
+  height: .5rem;
+  max-width: 10rem;
+  display:block;
+  background-color: $lime;
+  width: 100%;
+  }
+}

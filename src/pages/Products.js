@@ -15,14 +15,19 @@ const Products = () => {
     getAllProducts()
   }, [])
   return (
+    <div className="products-wrapper">
     <Container>
-      <h1>See all our Products</h1>
+      <div className="e-wrapper__heading">
+        <h3>Some of our products ...</h3>
+        <hr />
+      </div>
       <Row>
         {products.map((product, idx) => (
           <ItemPanel key={idx} product={ product} />
         ))}
       </Row>
-    </Container>
+      </Container>
+    </div>
   )
 }
 

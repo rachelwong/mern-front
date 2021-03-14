@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container, Navbar, Form, FormControl, Button } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'; // this require specific import
-import { BiAccessibility } from "react-icons/bi";
+import { BiAccessibility, BiSearchAlt } from "react-icons/bi";
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg" className="navbar">
+    <Navbar expand="lg" className="main-nav">
       <Container>
         <Navbar.Brand href="/">
           <BiAccessibility className="navbar-logo" />
@@ -19,8 +19,11 @@ const NavBar = () => {
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
           <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2 navbar__input" />
+            <Button className="navbar__button">
+              <BiSearchAlt />
+              <span className="sr-only">Search site</span>
+            </Button>
           </Form>
           </Navbar.Collapse>
         </Container>

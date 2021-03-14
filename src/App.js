@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import { Home, About, Products, Product, Contact } from './pages'
+import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
+import { Home, About, Products, Product, Contact, NotFound } from './pages'
 import { NavBar, Footer} from './components'
 function App() {
   return (
@@ -12,7 +12,9 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/products" component={Products} />
             <Route path="/products/:productslug" component={Product} />
-            <Route path="/contact" component={ Contact }/>
+            <Route path="/contact" component={Contact} />
+            <Route path="/404" component={NotFound} />
+            <Redirect from="*" to="/404" />
           </Switch>
         </main>
         <Footer />

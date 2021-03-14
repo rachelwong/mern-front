@@ -1,10 +1,13 @@
 import React from 'react'
-
+import { Container } from 'react-bootstrap'
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact</h1>
-    </div>
+    <Container>
+      <div className="e-wrapper__heading">
+        <h3>Get in touch ...</h3>
+        <hr />
+      </div>
+    </Container>
   )
 }
 
