@@ -38,6 +38,7 @@
   "devDependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "json-server": "^0.16.3",
     "phosphor-react": "^1.2.1",
     "react-bootstrap": "^1.5.2",
     "react-icons": "^4.2.0",

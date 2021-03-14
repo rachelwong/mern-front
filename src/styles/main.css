@@ -16,4 +16,8 @@
 html {
   font-size: 62.5%;
 }
+
+.main-carousel {
+  max-height: 100rem;
+}
 /*# sourceMappingURL=main.css.map */
