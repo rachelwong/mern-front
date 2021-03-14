@@ -1,11 +1,33 @@
-// .carousel-inner {
-//   max-height: 50rem;
+.navbar {
+  height: 10rem;
+  font-size: 1.7rem;
+}
 
-//   & ~ img {
-//     object-fit: cover;
-//   }
-// }
-
+.navbar-logo {
+  font-size: 4rem;
+}
 .main-carousel {
-  max-height: 100rem;
+  max-height: 60rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-carousel .carousel-item {
+  max-height: 60rem;
+  height: 100%;
+}
+
+.carousel_text {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+
+  h3 {
+    font-size: 10rem;
+  }
+  p {
+    font-size: 4rem;
+  }
 }

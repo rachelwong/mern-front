@@ -1,16 +1,19 @@
 import React from 'react'
 import { Container, Navbar, Form, FormControl, Button } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'; // this require specific import
+import { BiAccessibility } from "react-icons/bi";
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className="navbar">
       <Container>
-        <Navbar.Brand href="/">MERN Market</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <BiAccessibility className="navbar-logo" />
+          <span class="sr-only">MERN Market</span>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="/">Home</Nav.Link>
+          <Nav className="ml-auto">
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/about">Products</Nav.Link>
             <Nav.Link href="/about">Contact</Nav.Link>
