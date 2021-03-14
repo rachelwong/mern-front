@@ -30,6 +30,28 @@ html {
   white-space: nowrap;
 }
 
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.layout {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
+  z-index: 0;
+}
+
+/* Main Navigation */
 .navbar {
   height: 10rem;
   font-size: 1.7rem;
@@ -45,9 +67,14 @@ html {
   overflow: hidden;
 }
 
+/* Main home page carousel */
 .main-carousel .carousel-item {
   max-height: 60rem;
   height: 100%;
+}
+
+.main-carousel .carousel-caption {
+  max-width: 100%;
 }
 
 .carousel_text {
@@ -58,13 +85,31 @@ html {
           transform: translate(-50%, -50%);
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .carousel_text h3 {
-  font-size: 10rem;
+  font-size: 6rem;
 }
 
 .carousel_text p {
-  font-size: 4rem;
+  font-size: 2rem;
+}
+
+/* Homepage */
+.home-blurb {
+  font-size: 3rem;
 }
 /*# sourceMappingURL=main.css.map */

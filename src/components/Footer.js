@@ -10,7 +10,7 @@ const Footer = () => {
         <hr />
         <Row>
           <Col>
-            <Link to="/" exact>
+            <Link to="/">
               <BiAccessibility className="footer-logo"/>
             </Link>
           </Col>
@@ -20,7 +20,7 @@ const Footer = () => {
             <Link to="/contact" className="footer-link">Contact</Link>
           </Col>
           <Col xs lg="2">
-            <small className="footer-blurb">A non-profit initiative Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</small>
+            <small className="footer-blurb">A non-profit initiative Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. &copy;	2021</small>
           </Col>
         </Row>
       </Container>

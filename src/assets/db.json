@@ -8,7 +8,7 @@
       "owner_id": 345,
       "category": ["Mobility"],
       "brand": "Living Spinal",
-      "image": "./productImages/mobilityChair.jpg"
+      "image": "mobilityChair.jpg"
     },
     {
       "_id": 2,
@@ -18,7 +18,7 @@
       "owner_id": 12,
       "category": ["Mobility", "Hygiene", "Apparel"],
       "brand": "Sigvaris",
-      "image": "./productImages/compressionSocks.jpg"
+      "image": "compressionSocks.jpg"
     },
     {
       "_id": 3,
@@ -28,7 +28,7 @@
       "owner_id": 12,
       "category": ["Bedroom", "Mobility"],
       "brand": "Stander",
-      "image": "./productImages/sidebedRail.jpeg"
+      "image": "sidebedRail.jpeg"
     },
     {
       "_id": 4,
@@ -38,7 +38,7 @@
       "owner_id": 180,
       "category": ["Dining", "Mobility", "Hygiene"],
       "brand": "Gyenno",
-      "image": "./productImages/gyennoSpoon.jpeg"
+      "image": "gyennoSpoon.jpeg"
     },
     {
       "_id": 5,
@@ -48,7 +48,7 @@
       "owner_id": 180,
       "category": ["Dining", "Mobility", "Hygiene"],
       "brand": "Gyenno",
-      "image": "./productImages/bed.jpeg"
+      "image": "bed.jpeg"
     }
   ]
 }

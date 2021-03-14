@@ -9,14 +9,14 @@ const NavBar = () => {
       <Container>
         <Navbar.Brand href="/">
           <BiAccessibility className="navbar-logo" />
-          <span class="sr-only">MERN Market</span>
+          <span className="sr-only">MERN Market</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/about">Products</Nav.Link>
-            <Nav.Link href="/about">Contact</Nav.Link>
+            <Nav.Link href="/products">Products</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
