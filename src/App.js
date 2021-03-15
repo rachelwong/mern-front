@@ -11,7 +11,7 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
             <Route path="/products" component={Products} />
-            <Route path="/products/:productslug" component={Product} />
+            <Route path="/product/:productslug" exact component={Product} />
             <Route path="/contact" component={Contact} />
             <Route path="/404" component={NotFound} />
             <Redirect from="*" to="/404" />

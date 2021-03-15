@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6, blockquote {
   font-family:$heading-sans;
 }
 
-p, span, strong, small {
+p, span, strong, small, ul, ol, li, a, label {
   font-family: $body-sans;
   font-size: 1.7rem;
   line-height: 1.8;
@@ -28,7 +28,11 @@ p, span, strong, small {
 
 .e-dark-green {
   background-color: $dark-green;
-  color: white;
+  color: white !important;
+
+  .e-wrapper__heading :is(h1, h2, h3, h4, h5, h6){
+    color: $beige !important;
+  }
 }
 
 .e-lite-green {
@@ -38,6 +42,11 @@ p, span, strong, small {
 
 .e-white {
   background-color: white;
+  color: $dark-green;
+}
+
+.e-beige{
+  background-color: $beige;
   color: $dark-green;
 }
 
@@ -65,4 +74,32 @@ p, span, strong, small {
   background-color: $lime;
   width: 100%;
   }
+}
+
+.col-txt {}
+
+.col-txt__icon {
+  transform: scaleX(-1);
+  margin-right: 1rem;
+  color: $lime;
+  font-size: 1.8rem;
+}
+.e-button {
+  background-color: $lime;
+  color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  outline: none;
+  border:none;
+  font-family: $heading-sans;
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border-radius:0;
+  font-weight: $regular;
+}
+
+.e-button:hover,
+.e-button:focus {
+  background-color: $dark-green;
+  color: $beige;
+  outline: none !important;
 }

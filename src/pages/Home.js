@@ -30,7 +30,7 @@ const Home = () => {
           <p className="home-blurb__txt">Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
         </Container>
       </div>
-      <div className="e-wrapper e-white">
+      <div className="e-wrapper e-beige">
         <Container className="home-products">
           <Row>
             <div className="e-wrapper__heading">
